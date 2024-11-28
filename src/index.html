@@ -1,5 +1,593 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>JMV.corp</title>
+    <style>
+        body{
+            font-family: 'Times New Roman';
+            background-color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img{
+            height: 70px;
+            padding: 10px;
+        }
+
+        .logo a{
+            display: flex;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            align-items: center;
+        }
+
+        nav a { 
+            color: white; 
+            display: inline-block; 
+            margin: 0 4px; 
+            text-decoration: none; 
+            padding-right: 30px;
+        }
+
+        nav a:hover{
+            color: goldenrod;
+        }
+
+        /* HOME */
+
+        .home img{
+            opacity: 0.5;
+            width: 1503px;
+            height: 600px;
+        }
+
+        .home h1{
+            position: absolute;
+            font-size: 150px;
+            color: white;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        .home h2{
+            position: absolute;
+            font-size: 80px;
+            color: white;
+            margin-left: 100px;
+            margin-top: 250px;
+        }
+
+        .home p{
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            margin-left: 100px;
+            margin-top: 370px;
+        }
+
+        .home button{
+            position: absolute;
+            margin-left: -1400px;
+            margin-top: 460px;
+            background-color: transparent;
+            padding: 15px 50px;
+            color: goldenrod;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px goldenrod;
+        }
+
+        .home a{
+            text-decoration: none;
+        }
+
+        .home button:hover{
+            background-color: goldenrod;
+            color: black;
+        }
+
+        .pic img{
+            width: 500px;
+            height: 500px;
+            border: 1px solid goldenrod;
+            box-shadow: 0px 0px 20px 0px goldenrod;
+            position: absolute;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 50%;
+            margin-left: 800px;
+            margin-top: -560px;
+        }
+
+        /* ABOUT */
+        .about{
+            padding: 20px;
+        }
+
+        .about h1{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+        .about1{
+            max-width: 500px;
+            position: flex;
+            border: 1px solid white;
+            display: flex;
+            background-color: #141212;
+            padding-bottom: 290px;
+            margin-left: 50px;
+            border: none;
+            margin-bottom: 50px;
+        }
+
+        .about1 h1{
+            color: white;
+            font-size: 50px;
+            margin-left: 130px;
+            margin-top: 50px;
+        }
+
+        .about2 p{
+            max-width: 450px;
+            margin-top: -300px;
+            display: flex;
+            font-size: 20px;
+            color: white;
+            opacity: 0.5;
+            text-align: justify;
+            margin-left: 70px;
+            position: absolute;
+        }
+
+        .about3 img{
+            border-radius: 50%;
+            max-width: 170px;
+            position: absolute;
+            margin-top: -530px;
+            margin-left: 650px;
+        }
+
+        .about4 img{
+            border-radius: 50%;
+            max-width: 170px;
+            position: absolute;
+            margin-top: -370px;
+            margin-left: 1250px;
+        }
+
+        .about5 img{
+            border-radius: 50%;
+            max-width: 170px;
+            position: absolute;
+            margin-top: -215px;
+            margin-left: 650px;
+        }
+
+        .about3 p{
+            max-width: 450px;
+            border: 1px solid goldenrod;
+            color: white;
+            margin-top: -490px;
+            margin-left: 850px;
+            position: absolute;
+            padding: 20px 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px goldenrod;
+        }
+
+        .about4 p{
+            max-width: 450px;
+            border: 1px solid goldenrod;
+            color: white;
+            margin-top: -335px;
+            margin-left: 670px;
+            position: absolute;
+            padding: 20px 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px goldenrod;
+        }
+
+        .about5 p{
+            max-width: 450px;
+            border: 1px solid goldenrod;
+            color: white;
+            margin-top: -170px;
+            margin-left: 850px;
+            position: absolute;
+            padding: 20px 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px goldenrod;
+        }
+
+        /* SKILL */
+        .skill{
+            background-color: #141212;
+            padding-top: 20px;
+        }
+        .skill-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 10px;
+        }
+
+        .skill-column {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .skill .img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .skill h1 {
+            font-size: 30px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* SAMPLE */
+
+        #sample {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            grid-gap: 20px; /* Space between items */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #sample h2 {
+            position: absolute;
+            font-size: 36px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin-top: -90px;
+            margin-left: 420px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #sample h2::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: #bdac8e;
+            margin: 10px auto;
+        }
+
+        .sample-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid goldenrod;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sample-item img {
+            width: 100%;
+            max-width: 150px; /* Adjust the image size */
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .sample-item h1 {
+            font-size: 18px;
+            color: goldenrod;
+            margin-top: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sample-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .sample-item:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* SEMINAR */
+
+        .seminar-container{
+            max-width: 1600px;
+            background-color: #141212;
+            padding: 10px;
+        }
+
+        .seminar-container2{
+            max-width: 1600px;
+            background-color: #141212;
+            padding: 10px;
+        }
+
+        .seminar-container h1{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        .seminar {
+            max-width: 500px;
+            margin-left: 60px;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid goldenrod;
+            box-shadow: 0px 0px 10px 0px goldenrod;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seminar img {
+            width: 85%; /* Ensure images fill their container */
+            height: 250px; /* Maintain aspect ratio */
+            padding-top: 10px;
+            border-radius: 8px; /* Add some border radius */
+        }
+
+        /* Seminar title */
+        .seminar h1 {
+            margin-top: 10px; /* Add space between image and title */
+            font-size: 18px; /* Adjust font size */
+            margin-left: 10px;
+        }
+
+         /* FOOTER */
+
+         footer{
+            background: black;
+            height: auto;
+            width: 100%;
+            padding-top: 15px;
+            color: white;
+        }
+
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 28px;
+            font-size: 18px;
+        }
+
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .socials li{
+            margin: 0 10px;
+        }
+
+        .socials a{
+            text-decoration: none;
+            color: goldenrod;
+        }
+
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Your Logo">JMV.corp</a> 
+        </div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skill">SKILL SET</a>
+            <a href="#sample">SAMPLE WORK</a>
+            <a href="#seminar">SEMINAR</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+            <h1>Hi</h1>
+            <h2>I'm <strong style="color: goldenrod; font-size: 100px;">Jennylyn</strong></h2>
+            <p>UI/UX DESIGNER <br> FRONTEND DEVELOPER</p>
+            <img src="back.jpg" alt="">
+            <a href="#about"><button>KNOW ME MORE</button></a>
+    </section>
+        <div class="pic">
+            <img src="mee.jpg" alt="">
+        </div>
+
+        <section class="about" id="about">
+            <div id="about" class="about">
+                    <h1>ABOUT ME</h1>
+                <div class="about1">
+                    <h1>MY LIFE <br> JOURNEY</h1>
+                </div>
+                <div class="about2">
+                    <p>
+                        "I am Jennylyn Vista, a 20-year-old student currently in my third year of college at PHINMA Araullo University South Campus, pursuing a Bachelor of Science in Information Technology. 
+                        I am passionate about learning and constantly seek new opportunities to expand my knowledge and understanding of the world around me. 
+                        Eager to explore the wonders of life, I embrace each learning experience as a chance to grow and flourish intellectually."
+                    </p>
+                </div>
+
+                <div class="about3">
+                    <img src="b.jpg" alt="">
+                    <p>When I was an elementary student I studied at Buliran Elementary School, located at Brgy. Buliran Cabanatuan City Province of Nueva Ecija Philippines.</p>
+                </div>
+
+                <div class="about4">
+                    <img src="m.png" alt="">
+                    <p>When I was an High School student I studied at Mayapyap National HighSchool, located at Brgy. Mayapyap Norte Cabanatuan City Province of Nueva Ecija Philippines.</p>
+                </div>
+
+                <div class="about5">
+                    <img src="p.jpg" alt="">
+                    <p>Now that I was a collage student I currently studying at PHINMA Araullo University South Campus, located at Maharlika Highway Cabanatuan City Province of Nueva Ecija Philippines.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill" id="skill">
+            <div class="skill-row">
+                <div class="skill-column">
+                    <img src="1.png" alt="Image 1" class="img">
+                </div>
+                <div class="skill-column">
+                    <img src="2.png" alt="Image 2" class="img">
+                </div>
+                <div class="skill-column">
+                    <img src="3.png" alt="Image 3" class="img">
+                </div>
+            </div>
+        </section>
+
+        <section class="sample" id="sample">
+            <h2>SAMPLE PROJECT</h2>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1i3qskMB9tsBl512_mySQM4ccwoMyEuUC?usp=drive_link"><img src="fold.png" alt=""></a>
+                <h1>Hospital Management System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1LwIwYNI9yTg0d4WPN1yY5BD8wnbzr9vS?usp=drive_link"><img src="fold.png" alt=""></a>
+                <h1>Laundry System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1vd0gDT5_cyhn1IGMqb95H_Cvz5W5p9K8?usp=drive_link"><img src="fold.png" alt=""></a>
+                <h1>Hotel Management System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1wtVlGpHcB9iXKmVxwB7fkJOqgHdYTtCh?usp=drive_link"><img src="fold.png" alt=""></a>
+                <h1>Clothing System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1jAH_9PmkIuhU2tL5wrS-_psKfhNI-aa-?usp=sharing"><img src="fold.png" alt=""></a>
+                <h1>PSE & Weather System</h1>
+            </div>
+
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/18r9MA9HeVFPyc3kPEUkBsLsaGcI9ObY4?usp=sharing"><img src="fold.png" alt=""></a>
+                <h1>Fitness System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1mEEBah3cgq1DLlKnt87nSKsY9oFDgYEY?usp=sharing"><img src="fold.png" alt=""></a>
+                <h1>Streetfood System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1mEEBah3cgq1DLlKnt87nSKsY9oFDgYEY?usp=sharing"><img src="fold.png" alt=""></a>
+                <h1>Ecommerce System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1GPFsNU6QMBEdlWB43a_Vdl6ebiBThLyD?usp=sharing"><img src="fold.png" alt="Image 4"></a>
+                <h1>Ma - Brows Spa System</h1>
+            </div>
+            <div class="sample-item">
+                <a href="https://drive.google.com/drive/folders/1nAOChppcrnSKE1NcUQuymYuxZbNiExyN?usp=drive_link"><img src="fold.png" alt="Image 4"></a>
+                <h1>THE'A Spa System</h1>
+            </div>
+        </section>
+
+        <div id="seminar" class="seminar-container">
+            <h1>SEMINARS</h1>
+            <div class="seminar">
+                <img src="seminar (1).jpg" alt="">
+                <h1>HUMANITARIAN TECHNOLOGY</h1>
+            </div>
+    
+            <div class="seminar">
+                <img src="seminar (2).jpg" alt="">
+                <h1>HACKERS VS HACKERS</h1>
+            </div>
+    
+            <div class="seminar">
+                <img src="seminar (3).jpg" alt="">
+                <h1>THE FUTURE US HERE</h1>
+            </div>
+            
+            <div class="seminar-container2">
+                <div class="seminar">
+                    <img src="seminar (4).jpg" alt="">
+                    <h1>DIGITAL PHOTOGRAPHY</h1>
+                </div>
+        
+                <div class="seminar">
+                    <img src="seminar (5).jpg" alt="">
+                    <h1>IT IN THE BPO</h1>
+                </div>
+        
+                <div class="seminar">
+                    <img src="seminar (6).jpg" alt="">
+                    <h1>DIGITAL FILM MAKING</h1>
+                </div>
+            </div>  
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/lhyn.vista.9"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/lhynvista/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+                <p>copyrigth &copy;2024 Info design by <span style="color: goldenrod;">Jennylyn M. Vista</span></p>
+            </div>
+        </footer>
+    
+</body>
+</html>
